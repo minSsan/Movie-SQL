@@ -24,6 +24,15 @@ python -m venv [가상환경 이름]
 ```
 pip install django
 ```
+<br>
+<br>
+
+### ⏳ 여기서부터는 프로젝트 폴더(= movie 폴더)에서 진행해야합니다.    
+```
+cd movie
+```
+<br>
+<br>
 
 # 3. Local 서버 실행하기
 ```
