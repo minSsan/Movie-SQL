@@ -661,7 +661,7 @@ ol {
 
 .product__item__pic .ep {
 	font-size: 13px;
-	color: #ffffff;
+	color: #000;
 	background: #e53637;
 	display: inline-block;
 	padding: 2px 12px;
@@ -673,7 +673,7 @@ ol {
 
 .product__item__pic .comment {
 	font-size: 13px;
-	color: #ffffff;
+	color: #000;
 	background: #3d3d3d;
 	display: inline-block;
 	padding: 2px 10px;
@@ -685,7 +685,7 @@ ol {
 
 .product__item__pic .view {
 	font-size: 13px;
-	color: #ffffff;
+	color: #000;
 	background: #3d3d3d;
 	display: inline-block;
 	padding: 2px 10px;
@@ -706,161 +706,21 @@ ol {
 .product__item__text ul li {
 	list-style: none;
 	font-size: 10px;
-	color: #ffffff;
+	color: #fff;
 	font-weight: 700;
 	padding: 1px 10px;
-	background: rgba(255, 255, 255, 0.2);
+	background: #386183;
+	opacity: 0.5;
 	border-radius: 50px;
 	display: inline-block;
 }
 
 .product__item__text h5 a {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	line-height: 26px;
 }
 
-.product__sidebar .section-title h5 {
-	color: #ffffff;
-	font-weight: 600;
-	font-family: "Oswald", sans-serif;
-	line-height: 21px;
-	text-transform: uppercase;
-	padding-left: 20px;
-	position: relative;
-}
-
-.product__sidebar .section-title h5:after {
-	position: absolute;
-	left: 0;
-	top: -6px;
-	height: 32px;
-	width: 4px;
-	background: #e53637;
-	content: "";
-}
-
-.product__sidebar__view {
-	position: relative;
-	margin-bottom: 80px;
-}
-
-.product__sidebar__view .filter__controls {
-	position: absolute;
-	right: 0;
-	top: -5px;
-}
-
-.product__sidebar__view .filter__controls li {
-	list-style: none;
-	font-size: 13px;
-	color: #b7b7b7;
-	display: inline-block;
-	margin-right: 7px;
-	cursor: pointer;
-}
-
-.product__sidebar__view .filter__controls li.active {
-	color: #ffffff;
-}
-
-.product__sidebar__view .filter__controls li:last-child {
-	margin-right: 0;
-}
-
-.product__sidebar__view__item {
-	height: 190px;
-	position: relative;
-	border-radius: 5px;
-	margin-bottom: 20px;
-}
-
-.product__sidebar__view__item .ep {
-	font-size: 13px;
-	color: #ffffff;
-	background: #e53637;
-	display: inline-block;
-	padding: 2px 12px;
-	border-radius: 4px;
-	position: absolute;
-	left: 10px;
-	top: 10px;
-}
-
-.product__sidebar__view__item .view {
-	font-size: 13px;
-	color: #ffffff;
-	background: #3d3d3d;
-	display: inline-block;
-	padding: 2px 10px;
-	border-radius: 4px;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
-.product__sidebar__view__item h5 {
-	position: absolute;
-	left: 0;
-	bottom: 25px;
-	width: 100%;
-	padding: 0 30px 0 20px;
-}
-
-.product__sidebar__view__item h5 a {
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 26px;
-}
-
-.product__sidebar__comment {
-	margin-bottom: 35px;
-}
-
-.product__sidebar__comment__item {
-	margin-bottom: 20px;
-	overflow: hidden;
-}
-
-.product__sidebar__comment__item__pic {
-	float: left;
-	margin-right: 15px;
-}
-
-.product__sidebar__comment__item__text {
-	overflow: hidden;
-}
-
-.product__sidebar__comment__item__text ul {
-	margin-bottom: 10px;
-}
-
-.product__sidebar__comment__item__text ul li {
-	list-style: none;
-	font-size: 10px;
-	color: #ffffff;
-	font-weight: 700;
-	padding: 1px 10px;
-	background: rgba(255, 255, 255, 0.2);
-	border-radius: 50px;
-	display: inline-block;
-}
-
-.product__sidebar__comment__item__text h5 {
-	margin-bottom: 10px;
-}
-
-.product__sidebar__comment__item__text h5 a {
-	color: #ffffff;
-	font-weight: 700;
-	line-height: 26px;
-}
-
-.product__sidebar__comment__item__text span {
-	display: block;
-	font-size: 13px;
-	color: #b7b7b7;
-}
 
 .product__page__title {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -960,7 +820,7 @@ ol {
 }
 
 .anime__details__text p {
-	color: #b7b7b7;
+	color: #386183;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -1000,14 +860,14 @@ ol {
 }
 
 .anime__details__title h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	margin-bottom: 13px;
 }
 
 .anime__details__title span {
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #777777;
 	display: block;
 }
 
@@ -1020,7 +880,7 @@ ol {
 
 .anime__details__rating .rating i {
 	font-size: 24px;
-	color: #e89f12;
+	color: #000000;
 	display: inline-block;
 }
 
@@ -1066,7 +926,7 @@ ol {
 .anime__details__btn .follow-btn {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #b0c5d8;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -1079,7 +939,7 @@ ol {
 .anime__details__btn .watch-btn span {
 	font-size: 13px;
 	color: #ffffff;
-	background: #e53637;
+	background: #6185a3;
 	display: inline-block;
 	font-weight: 700;
 	letter-spacing: 2px;
@@ -1092,7 +952,7 @@ ol {
 .anime__details__btn .watch-btn i {
 	font-size: 20px;
 	display: inline-block;
-	background: #e53637;
+	background: #6185a3;
 	padding: 11px 5px 16px 8px;
 	color: #ffffff;
 	border-radius: 0 4px 4px 0;
@@ -1118,7 +978,7 @@ ol {
 	right: -30px;
 	top: 15px;
 	border-top: 15px solid transparent;
-	border-left: 15px solid #1d1e39;
+	border-left: 15px solid #386183;
 	content: "";
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
@@ -1934,7 +1794,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #070720;
+	background: #32516b;
 	padding-top: 60px;
 	padding-bottom: 40px;
 	position: relative;
@@ -1953,7 +1813,7 @@ ol {
 	color: #ffffff;
 	height: 50px;
 	width: 50px;
-	background: #e53637;
+	background: #6185a3;
 	line-height: 50px;
 	text-align: center;
 	border-radius: 50%;
@@ -1982,19 +1842,19 @@ ol {
 
 .footer__nav ul li a {
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #fff;
 	display: block;
 	font-weight: 700;
 }
 
 .footer__copyright__text {
-	color: #b7b7b7;
+	color: #fff;
 	margin-bottom: 0;
 	text-align: right;
 }
 
 .footer__copyright__text a {
-	color: #e53637;
+	color: #6185a3;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
