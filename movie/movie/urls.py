@@ -23,4 +23,5 @@ urlpatterns = [
     path('movie_detail', movie_detail, name="movie_detail"),
     path('signup', signup, name="signup"),
     path('login', login, name="login"),
+    path('events', events, name="events"),
 ]

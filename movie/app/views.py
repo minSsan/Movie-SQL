@@ -12,3 +12,6 @@ def signup(request):
 
 def login(request):
     return render(request, 'login.html')
+
+def events(request):
+    return render(request, 'events.html')
