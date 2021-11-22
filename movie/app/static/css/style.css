@@ -777,7 +777,7 @@ ol {
 .product__pagination a {
 	display: inline-block;
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #fff;
 	font-weight: 600;
 	height: 50px;
 	width: 50px;
@@ -791,7 +791,7 @@ ol {
 }
 
 .product__pagination a:hover {
-	color: #ffffff;
+	color: #555555;
 }
 
 .product__pagination a.current-page {
