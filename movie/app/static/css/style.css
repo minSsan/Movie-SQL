@@ -560,7 +560,8 @@ ol {
 .hero__slider.owl-carousel .owl-dots button {
 	height: 8px;
 	width: 8px;
-	background: #b7b7b7;
+	
+background: #b7b7b788;
 	border-radius: 50%;
 	margin-right: 10px;
 }
@@ -713,6 +714,12 @@ ol {
 	opacity: 0.5;
 	border-radius: 50px;
 	display: inline-block;
+}
+
+.product__item__text h5 {
+	color: #000;
+	font-weight: 700;
+	line-height: 26px;
 }
 
 .product__item__text h5 a {
@@ -1203,7 +1210,7 @@ ol {
 }
 
 .normal__breadcrumb__text h2 {
-	color: #ffffff;
+	color: #000;
 	font-size: 48px;
 	font-family: "Oswald", sans-serif;
 	font-weight: 700;
@@ -1211,7 +1218,7 @@ ol {
 }
 
 .normal__breadcrumb__text p {
-	color: #ffffff;
+	color: #000;
 	font-size: 24px;
 	margin-bottom: 0;
 }
@@ -1599,7 +1606,7 @@ ol {
 }
 
 .login__form h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
@@ -1666,7 +1673,7 @@ ol {
 
 .login__form .forget_pass {
 	font-size: 15px;
-	color: #ffffff;
+	color: #000;
 	display: inline-block;
 	position: absolute;
 	right: 60px;
@@ -1678,7 +1685,7 @@ ol {
 }
 
 .login__register h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
@@ -1698,7 +1705,7 @@ ol {
 }
 
 .login__social__links span {
-	color: #ffffff;
+	color: #000;
 	display: block;
 	font-size: 13px;
 	font-weight: 700;
@@ -1763,7 +1770,7 @@ ol {
 
 .signup .login__form h5 {
 	font-size: 15px;
-	color: #ffffff;
+	color: #000;
 	margin-top: 36px;
 }
 
@@ -1778,7 +1785,7 @@ ol {
 }
 
 .signup .login__social__links h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
