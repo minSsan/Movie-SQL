@@ -30,11 +30,17 @@
 
 /* Template default CSS
 /*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 html,
 body {
 	height: 100%;
-	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	background: #fff;
 }
@@ -140,7 +146,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: top center;
 }
 
@@ -171,6 +177,10 @@ ol {
 	text-transform: uppercase;
 	color: #000;
 	letter-spacing: 2px;
+}
+
+.primary-btn:hover {
+	color:rgb(133, 133, 133);
 }
 
 .primary-btn span {
@@ -560,7 +570,8 @@ ol {
 .hero__slider.owl-carousel .owl-dots button {
 	height: 8px;
 	width: 8px;
-	background: #b7b7b7;
+	
+background: #b7b7b788;
 	border-radius: 50%;
 	margin-right: 10px;
 }
@@ -715,6 +726,12 @@ ol {
 	display: inline-block;
 }
 
+.product__item__text h5 {
+	color: #000;
+	font-weight: 700;
+	line-height: 26px;
+}
+
 .product__item__text h5 a {
 	color: #000;
 	font-weight: 700;
@@ -771,13 +788,15 @@ ol {
 }
 
 .product__pagination {
+	display: inline-block;
 	padding-top: 15px;
+	margin: auto;
 }
 
 .product__pagination a {
 	display: inline-block;
 	font-size: 15px;
-	color: #b7b7b7;
+	color: #6185a3;
 	font-weight: 600;
 	height: 50px;
 	width: 50px;
@@ -791,11 +810,11 @@ ol {
 }
 
 .product__pagination a:hover {
-	color: #ffffff;
+	color: #183e5e;
 }
 
 .product__pagination a.current-page {
-	border: 1px solid #ffffff;
+	border: 1px solid #183e5e;
 }
 
 .product__pagination a i {
@@ -1203,7 +1222,7 @@ ol {
 }
 
 .normal__breadcrumb__text h2 {
-	color: #ffffff;
+	color: #000;
 	font-size: 48px;
 	font-family: "Oswald", sans-serif;
 	font-weight: 700;
@@ -1211,7 +1230,7 @@ ol {
 }
 
 .normal__breadcrumb__text p {
-	color: #ffffff;
+	color: #000;
 	font-size: 24px;
 	margin-bottom: 0;
 }
@@ -1599,7 +1618,7 @@ ol {
 }
 
 .login__form h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
@@ -1666,7 +1685,7 @@ ol {
 
 .login__form .forget_pass {
 	font-size: 15px;
-	color: #ffffff;
+	color: #000;
 	display: inline-block;
 	position: absolute;
 	right: 60px;
@@ -1678,7 +1697,7 @@ ol {
 }
 
 .login__register h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;
@@ -1698,7 +1717,7 @@ ol {
 }
 
 .login__social__links span {
-	color: #ffffff;
+	color: #000;
 	display: block;
 	font-size: 13px;
 	font-weight: 700;
@@ -1763,7 +1782,7 @@ ol {
 
 .signup .login__form h5 {
 	font-size: 15px;
-	color: #ffffff;
+	color: #000;
 	margin-top: 36px;
 }
 
@@ -1778,7 +1797,7 @@ ol {
 }
 
 .signup .login__social__links h3 {
-	color: #ffffff;
+	color: #000;
 	font-weight: 700;
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 30px;

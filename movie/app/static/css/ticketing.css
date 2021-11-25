@@ -1,0 +1,25 @@
+.ticketing {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.ticketing h3 {
+    font-weight: bold;
+}
+
+.ticketing .ticketing__container {
+    margin-top: 20px;
+
+    height: 500px;
+    border: 2px solid #C4C4C4;
+}
+
+div.ticketing__calender {
+    height: 70px;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.ticketing__select {
+    display: flex;
+    flex-wrap: wrap;
+}
