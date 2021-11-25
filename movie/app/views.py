@@ -4,8 +4,14 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'main.html')
 
+def movie_list(request):
+    return render(request, 'movie-list.html')
+
 def movie_detail(request):
     return render(request, 'movie-detail.html')
+
+def ticketing(request):
+    return render(request, 'ticketing.html')
 
 def signup(request):
     return render(request, 'signup.html')

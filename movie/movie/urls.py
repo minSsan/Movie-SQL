@@ -21,6 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
     path('movie_detail', movie_detail, name="movie_detail"),
+    path('ticketing', ticketing, name="ticketing"),
+    path('movie_list', movie_list, name="movie_list"),
     path('signup', signup, name="signup"),
     path('login', login, name="login"),
     path('events', events, name="events"),

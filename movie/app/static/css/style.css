@@ -30,11 +30,17 @@
 
 /* Template default CSS
 /*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 html,
 body {
 	height: 100%;
-	font-family: "Mulish", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	background: #fff;
 }
@@ -140,7 +146,7 @@ ol {
 
 .set-bg {
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: top center;
 }
 
@@ -171,6 +177,10 @@ ol {
 	text-transform: uppercase;
 	color: #000;
 	letter-spacing: 2px;
+}
+
+.primary-btn:hover {
+	color:rgb(133, 133, 133);
 }
 
 .primary-btn span {
@@ -778,13 +788,15 @@ background: #b7b7b788;
 }
 
 .product__pagination {
+	display: inline-block;
 	padding-top: 15px;
+	margin: auto;
 }
 
 .product__pagination a {
 	display: inline-block;
 	font-size: 15px;
-	color: #fff;
+	color: #6185a3;
 	font-weight: 600;
 	height: 50px;
 	width: 50px;
@@ -798,11 +810,11 @@ background: #b7b7b788;
 }
 
 .product__pagination a:hover {
-	color: #555555;
+	color: #183e5e;
 }
 
 .product__pagination a.current-page {
-	border: 1px solid #ffffff;
+	border: 1px solid #183e5e;
 }
 
 .product__pagination a i {
