@@ -15,3 +15,9 @@ def login(request):
 
 def events(request):
     return render(request, 'events.html')
+
+def forget(request):
+    return render(request, 'forget.html')
+
+def findID(request):
+    return render(request, 'findID.html')
