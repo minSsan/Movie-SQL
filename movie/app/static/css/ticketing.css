@@ -1,5 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .ticketing {
-    width: 80%;
+    width: 1000px;
     margin: 5% auto;
 }
 
@@ -8,18 +13,81 @@
 }
 
 .ticketing .ticketing__container {
+    display: flex;
+    flex-direction: column;
+
     margin-top: 20px;
 
     height: 500px;
     border: 2px solid #C4C4C4;
 }
 
-div.ticketing__calender {
-    height: 70px;
+.ticketing__calender {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
     border-bottom: 1px solid #c4c4c4;
 }
 
+.ticketing__calender > input {
+    margin-left: 10px;
+    padding: 5px;
+
+    border: none;
+    border-radius: 20px;
+    
+    background-color: #e5e5e5;
+
+    font-size: 12px;
+}
+
 .ticketing__select {
+    /* flex-grow: 1; */
     display: flex;
     flex-wrap: wrap;
+    height: 500px;
+}
+
+.select_container {
+    width: 30%;
+    padding: 10px;
+
+    border-right: 1px solid #c4c4c4;
+}
+
+.select_container:last-child{
+    width: 40%;
+    border: none;
+}
+
+.select_container > h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.select_list {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.select_list input[type='radio'] {
+    display: none;
+}
+
+.select_list label {
+    width: 100%;
+    margin: 2.5px 0;
+    padding: 5px;
+    border-radius: 20px;
+
+    transition: all 0.5s;
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.select_list input[type='radio']:checked + label {
+    background-color: #D1DFEB;
+    color: #1F588D;
 }
