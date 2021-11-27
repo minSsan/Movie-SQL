@@ -66,6 +66,14 @@
     margin-bottom: 10px;
 }
 
+.theater.select_container > div {
+    display: flex;
+}
+
+.theater .select_list {
+    width: 50%;
+}
+
 .select_list {
     height: 400px;
     overflow-y: scroll;
