@@ -26,6 +26,7 @@ urlpatterns = [
     path('signup', signup, name="signup"),
     path('login', login, name="login"),
     path('events', events, name="events"),
+    path('event_detail', event_detail, name="event_detail"),
     path('forget', forget, name="forget"),
     path('findID', findID, name="findID"),
 ]
