@@ -29,4 +29,8 @@ urlpatterns = [
     path('event_detail', event_detail, name="event_detail"),
     path('forget', forget, name="forget"),
     path('findID', findID, name="findID"),
+    path('mypage', mypage, name="mypage"),
+    path('eventrecord', eventrecord, name="eventrecord"),
+    path('infomodification', infomodification, name="infomodification"),
+    path('reservationinfo', reservationinfo, name="reservationinfo"),
 ]

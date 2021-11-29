@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="../static/css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="../static/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+
+    <!--mypage-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Dashboard - SB Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="../static/css/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     {% block extrahead %}
     {% endblock %}
 </head>
@@ -61,7 +71,7 @@
                 </div>
                 <div class="col-lg-2">
                     <div class="header__right">
-                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="{% url 'mypage' %}" class="search-switch"><span class="icon_search"></span></a>
                         <a href="{% url 'login' %}"><span class="icon_profile"></span></a>
                     </div>
                 </div>

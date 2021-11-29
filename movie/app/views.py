@@ -30,3 +30,15 @@ def forget(request):
 
 def findID(request):
     return render(request, 'findID.html')
+
+def mypage(request):
+    return render(request, './mypage/mypage.html')
+
+def eventrecord(request):
+    return render(request, './mypage/eventrecord.html')
+
+def infomodification(request):
+    return render(request, './mypage/infomodification.html')
+
+def reservationinfo(request):
+    return render(request, './mypage/reservationinfo.html')  
