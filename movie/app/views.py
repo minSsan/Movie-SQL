@@ -41,4 +41,16 @@ def infomodification(request):
     return render(request, './mypage/infomodification.html')
 
 def reservationinfo(request):
-    return render(request, './mypage/reservationinfo.html')  
+    return render(request, './mypage/reservationinfo.html')
+
+def managerpage(request):
+    return render(request, './managerpage/managerpage.html')
+
+def companymanage(request):
+    return render(request, './managerpage/companymanage.html')
+
+def moviemanage(request):
+    return render(request, './managerpage/moviemanage.html')
+
+def revenuemanage(request):
+    return render(request, './managerpage/revenuemanage.html')  
