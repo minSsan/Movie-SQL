@@ -3,6 +3,10 @@
     {% load static %}
     {% block extrahead %}
         <link rel="stylesheet" href="../static/css/ticketing.css">
+        <link rel="stylesheet" href="../static/css/ticket_component.css">
+        <link rel="stylesheet" href="../static/css/ticket_demo.css">
+        <link rel="stylesheet" href="../static/css/ticket_normalize.css">
+        <script src="../static/js/modernizr-custom.js"></script>
     {% endblock %}
 </head>
 
@@ -10,30 +14,418 @@
 <!-- ticketing section begin -->
 <section class="ticketing">
     <h3>예매하기</h3>
-    <form class="ticketing__container" action="" method="get">
-        <div class="ticketing__calender">
-            <input type="date" name="" id="">
+    <form action="" method="POST">
+        <div class="ticketing__container">
+            <div class="ticketing__calender">
+                <input type="date" name="" id="">
+            </div>
+            <div class="ticketing__select">
+                <div class="movie select_container">
+                    <h5>영화</h5>
+                    <div class="select_list">
+                        <input type="radio" name="movie" id="movie1" value="영화1"><label for="movie1">영화1</label>
+                        <input type="radio" name="movie" id="movie2" value="영화2"><label for="movie2">영화2</label>
+                    </div>
+                </div>
+                <div class="theater select_container">
+                    <h5>극장</h5>
+                    <div>
+                        <div class="select_list">
+                            <input type="radio" name="" id="">
+                        </div>
+                        <div class="select_list"></div>
+                    </div>
+                </div>
+                <div class="time select_container">
+                    <h5>시간</h5>
+                    <div class="select_list"></div>
+                </div>
+            </div>
         </div>
-        <div class="ticketing__select">
-            <div class="movie select_container">
-                <h5>영화</h5>
-                <div class="select_list">
-                    <input type="radio" name="movie" id="movie1" value="영화1"><label for="movie1">영화1</label>
-                    <input type="radio" name="movie" id="movie2" value="영화2"><label for="movie2">영화2</label>
+
+        <div id="modal">
+            <div class="seat_header">
+                <h2 class="header__title">좌석 선택</h2>
+                <p class="note note--screen">Please view on a larger screen</p>
+                <p class="note note--support">Sorry, but your browser doesn't support preserve-3d!</p>
+            </div>
+            <div class="plan">
+                <h3 class="plan__title">Seating Plan</h3>
+                <div class="rows rows--mini">
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="A1" value="A1"/><label class="row__seat seat_tooltip" data-tooltip="A1" for="A1"></label>
+                        <input type="radio" name="seat" id="A2" value="A2"/><label class="row__seat seat_tooltip" data-tooltip="A2" for="A2"></label>
+                        <input type="radio" name="seat" id="A3" value="A3"/><label class="row__seat seat_tooltip" data-tooltip="A3" for="A3"></label>
+                        <input type="radio" name="seat" id="A4" value="A4"/><label class="row__seat seat_tooltip" data-tooltip="A4" for="A4"></label>
+                        <input type="radio" name="seat" id="A5" value="A5"/><label class="row__seat seat_tooltip" data-tooltip="A5" for="A5"></label>
+                        <input type="radio" name="seat" id="A6" value="A6"/><label class="row__seat seat_tooltip" data-tooltip="A6" for="A6"></label>
+                        <input type="radio" name="seat" id="A7" value="A7"/><label class="row__seat seat_tooltip" data-tooltip="A7" for="A7"></label>
+                        <input type="radio" name="seat" id="A8" value="A8"/><label class="row__seat seat_tooltip" data-tooltip="A8" for="A8"></label>
+                        <input type="radio" name="seat" id="A9" value="A9"/><label class="row__seat seat_tooltip" data-tooltip="A9" for="A9"></label>
+                        <input type="radio" name="seat" id="A10" value="A10"/><label class="row__seat seat_tooltip" data-tooltip="A10" for="A10"></label>
+                        <input type="radio" name="seat" id="A11" value="A11"/><label class="row__seat seat_tooltip" data-tooltip="A11" for="A11"></label>
+                        <input type="radio" name="seat" id="A12" value="A12"/><label class="row__seat seat_tooltip" data-tooltip="A12" for="A12"></label>
+                        <input type="radio" name="seat" id="A13" value="A13"/><label class="row__seat seat_tooltip" data-tooltip="A13" for="A13"></label>
+                        <input type="radio" name="seat" id="A14" value="A14"/><label class="row__seat seat_tooltip" data-tooltip="A14" for="A14"></label>
+                        <input type="radio" name="seat" id="A15" value="A15"/><label class="row__seat seat_tooltip" data-tooltip="A15" for="A15"></label>
+                        <input type="radio" name="seat" id="A16" value="A16"/><label class="row__seat seat_tooltip" data-tooltip="A16" for="A16"></label>
+                        <input type="radio" name="seat" id="A17" value="A17"/><label class="row__seat seat_tooltip" data-tooltip="A17" for="A17"></label>
+                        <input type="radio" name="seat" id="A18" value="A18"/><label class="row__seat seat_tooltip" data-tooltip="A18" for="A18"></label>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="B1" value="B1"/>
+                        <input type="radio" name="seat" id="B2" value="B2"/>
+                        <input type="radio" name="seat" id="B3" value="B3"/>
+                        <input type="radio" name="seat" id="B4" value="B4"/>
+                        <input type="radio" name="seat" id="B5" value="B5"/>
+                        <input type="radio" name="seat" id="B6" value="B6"/>
+                        <input type="radio" name="seat" id="B7" value="B7"/>
+                        <input type="radio" name="seat" id="B8" value="B8"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="B11" value="B11"/>
+                        <input type="radio" name="seat" id="B12" value="B12"/>
+                        <input type="radio" name="seat" id="B13" value="B13"/>
+                        <input type="radio" name="seat" id="B14" value="B14"/>
+                        <input type="radio" name="seat" id="B15" value="B15"/>
+                        <input type="radio" name="seat" id="B16" value="B16"/>
+                        <input type="radio" name="seat" id="B17" value="B17"/>
+                        <input type="radio" name="seat" id="B18" value="B18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="C1" value="C1"/>
+                        <input type="radio" name="seat" id="C2" value="C2"/>
+                        <input type="radio" name="seat" id="C3" value="C3"/>
+                        <input type="radio" name="seat" id="C4" value="C4"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="C8" value="C8"/>
+                        <input type="radio" name="seat" id="C9" value="C9"/>
+                        <input type="radio" name="seat" id="C10" value="C10"/>
+                        <input type="radio" name="seat" id="C11" value="C11"/>
+                        <input type="radio" name="seat" id="C12" value="C12"/>
+                        <input type="radio" name="seat" id="C13" value="C13"/>
+                        <input type="radio" name="seat" id="C14" value="C14"/>
+                        <input type="radio" name="seat" id="C15" value="C15"/>
+                        <input type="radio" name="seat" id="C16" value="C16"/>
+                        <input type="radio" name="seat" id="C17" value="C17"/>
+                        <input type="radio" name="seat" id="C18" value="C18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="D1" value="D1"/>
+                        <input type="radio" name="seat" id="D2" value="D2"/>
+                        <input type="radio" name="seat" id="D3" value="D3"/>
+                        <input type="radio" name="seat" id="D4" value="D4"/>
+                        <input type="radio" name="seat" id="D5" value="D5"/>
+                        <input type="radio" name="seat" id="D6" value="D6"/>
+                        <input type="radio" name="seat" id="D7" value="D7"/>
+                        <input type="radio" name="seat" id="D8" value="D8"/>
+                        <input type="radio" name="seat" id="D9" value="D9"/>
+                        <input type="radio" name="seat" id="D10" value="D10"/>
+                        <input type="radio" name="seat" id="D11" value="D11"/>
+                        <input type="radio" name="seat" id="D12" value="D12"/>
+                        <input type="radio" name="seat" id="D13" value="D13"/>
+                        <input type="radio" name="seat" id="D14" value="D14"/>
+                        <input type="radio" name="seat" id="D15" value="D15"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="E1" value="E1"/>
+                        <input type="radio" name="seat" id="E2" value="E2"/>
+                        <input type="radio" name="seat" id="E3" value="E3"/>
+                        <input type="radio" name="seat" id="E4" value="E4"/>
+                        <input type="radio" name="seat" id="E5" value="E5"/>
+                        <input type="radio" name="seat" id="E6" value="E6"/>
+                        <input type="radio" name="seat" id="E7" value="E7"/>
+                        <input type="radio" name="seat" id="E8" value="E8"/>
+                        <input type="radio" name="seat" id="E9" value="E9"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="E12" value="E12"/>
+                        <input type="radio" name="seat" id="E13" value="E13"/>
+                        <input type="radio" name="seat" id="E14" value="E14"/>
+                        <input type="radio" name="seat" id="E15" value="E15"/>
+                        <input type="radio" name="seat" id="E16" value="E16"/>
+                        <input type="radio" name="seat" id="E17" value="E17"/>
+                        <input type="radio" name="seat" id="E18" value="E18"/>
+                    </div> 
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="F1" value="F1"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="F3" value="F3"/>
+                        <input type="radio" name="seat" id="F4" value="F4"/>
+                        <input type="radio" name="seat" id="F5" value="F5"/>
+                        <input type="radio" name="seat" id="F6" value="F6"/>
+                        <input type="radio" name="seat" id="F7" value="F7"/>
+                        <input type="radio" name="seat" id="F8" value="F8"/>
+                        <input type="radio" name="seat" id="F9" value="F9"/>
+                        <input type="radio" name="seat" id="F10" value="F10"/>
+                        <input type="radio" name="seat" id="F11" value="F11"/>
+                        <input type="radio" name="seat" id="F12" value="F12"/>
+                        <input type="radio" name="seat" id="F13" value="F13"/>
+                        <input type="radio" name="seat" id="F14" value="F14"/>
+                        <input type="radio" name="seat" id="F15" value="F15"/>
+                        <input type="radio" name="seat" id="F16" value="F16"/>
+                        <input type="radio" name="seat" id="F17" value="F17"/>
+                        <input type="radio" name="seat" id="F18" value="F18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="G1" value="G1"/>
+                        <input type="radio" name="seat" id="G2" value="G2"/>
+                        <input type="radio" name="seat" id="G3" value="G3"/>
+                        <input type="radio" name="seat" id="G4" value="G4"/>
+                        <input type="radio" name="seat" id="G5" value="G5"/>
+                        <input type="radio" name="seat" id="G6" value="G6"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="G9" value="G9"/>
+                        <input type="radio" name="seat" id="G10" value="G10"/>
+                        <input type="radio" name="seat" id="G11" value="G11"/>
+                        <input type="radio" name="seat" id="G12" value="G12"/>
+                        <input type="radio" name="seat" id="G13" value="G13"/>
+                        <input type="radio" name="seat" id="G14" value="G14"/>
+                        <input type="radio" name="seat" id="G15" value="G15"/>
+                        <input type="radio" name="seat" id="G16" value="G16"/>
+                        <input type="radio" name="seat" id="G17" value="G17"/>
+                        <input type="radio" name="seat" id="G18" value="G18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="H1" value="H1"/>
+                        <input type="radio" name="seat" id="H2" value="H2"/>
+                        <input type="radio" name="seat" id="H3" value="H3"/>
+                        <input type="radio" name="seat" id="H4" value="H4"/>
+                        <input type="radio" name="seat" id="H5" value="H5"/>
+                        <input type="radio" name="seat" id="H6" value="H6"/>
+                        <input type="radio" name="seat" id="H7" value="H7"/>
+                        <input type="radio" name="seat" id="H8" value="H8"/>
+                        <input type="radio" name="seat" id="H9" value="H9"/>
+                        <input type="radio" name="seat" id="H10" value="H10"/>
+                        <input type="radio" name="seat" id="H11" value="H11"/>
+                        <input type="radio" name="seat" id="H12" value="H12"/>
+                        <input type="radio" name="seat" id="H13" value="H13"/>
+                        <input type="radio" name="seat" id="H14" value="H14"/>
+                        <input type="radio" name="seat" id="H15" value="H15"/>
+                        <input type="radio" name="seat" id="H16" value="H16"/>
+                        <input type="radio" name="seat" id="H17" value="H17"/>
+                        <input type="radio" name="seat" id="H18" value="H18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="I1" value="I1"/>
+                        <input type="radio" name="seat" id="I2" value="I2"/>
+                        <input type="radio" name="seat" id="I3" value="I3"/>
+                        <input type="radio" name="seat" id="I4" value="I4"/>
+                        <input type="radio" name="seat" id="I5" value="I5"/>
+                        <input type="radio" name="seat" id="I6" value="I6"/>
+                        <input type="radio" name="seat" id="I7" value="I7"/>
+                        <input type="radio" name="seat" id="I8" value="I8"/>
+                        <input type="radio" name="seat" id="I9" value="I9"/>
+                        <input type="radio" name="seat" id="I10" value="I10"/>
+                        <input type="radio" name="seat" id="I11" value="I11"/>
+                        <input type="radio" name="seat" id="I12" value="I12"/>
+                        <input type="radio" name="seat" id="I13" value="I13"/>
+                        <input type="radio" name="seat" id="I14" value="I14"/>
+                        <input type="radio" name="seat" id="I15" value="I15"/>
+                        <input type="radio" name="seat" id="I16" value="I16"/>
+                        <input type="radio" name="seat" id="I17" value="I17"/>
+                        <input type="radio" name="seat" id="I18" value="I18"/>
+                    </div> 
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="J1" value="J1"/>
+                        <input type="radio" name="seat" id="J2" value="J2"/>
+                        <input type="radio" name="seat" id="J3" value="J3"/>
+                        <input type="radio" name="seat" id="J4" value="J4"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="J8" value="J8"/>
+                        <input type="radio" name="seat" id="J9" value="J9"/>
+                        <input type="radio" name="seat" id="J10" value="J10"/>
+                        <input type="radio" name="seat" id="J11" value="J11"/>
+                        <input type="radio" name="seat" id="J12" value="J12"/>
+                        <input type="radio" name="seat" id="J13" value="J13"/>
+                        <input type="radio" name="seat" id="J14" value="J14"/>
+                        <input type="radio" name="seat" id="J15" value="J15"/>
+                        <input type="radio" name="seat" id="J16" value="J16"/>
+                        <input type="radio" name="seat" id="J17" value="J17"/>
+                        <input type="radio" name="seat" id="J18" value="J18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="K1" value="K1"/>
+                        <input type="radio" name="seat" id="K2" value="K2"/>
+                        <input type="radio" name="seat" id="K3" value="K3"/>
+                        <input type="radio" name="seat" id="K4" value="K4"/>
+                        <input type="radio" name="seat" id="K5" value="K5"/>
+                        <input type="radio" name="seat" id="K6" value="K6"/>
+                        <input type="radio" name="seat" id="K7" value="K7"/>
+                        <input type="radio" name="seat" id="K8" value="K8"/>
+                        <input type="radio" name="seat" id="K9" value="K9"/>
+                        <input type="radio" name="seat" id="K10" value="K10"/>
+                        <input type="radio" name="seat" id="K11" value="K11"/>
+                        <input type="radio" name="seat" id="K12" value="K12"/>
+                        <input type="radio" name="seat" id="K13" value="K13"/>
+                        <input type="radio" name="seat" id="K14" value="K14"/>
+                        <input type="radio" name="seat" id="K15" value="K15"/>
+                        <input type="radio" name="seat" id="K16" value="K16"/>
+                        <input type="radio" name="seat" id="K17" value="K17"/>
+                        <input type="radio" name="seat" id="K18" value="K18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="L1" value="L1"/>
+                        <input type="radio" name="seat" id="L2" value="L2"/>
+                        <input type="radio" name="seat" id="L3" value="L3"/>
+                        <input type="radio" name="seat" id="L4" value="L4"/>
+                        <input type="radio" name="seat" id="L5" value="L5"/>
+                        <input type="radio" name="seat" id="L6" value="L6"/>
+                        <input type="radio" name="seat" id="L7" value="L7"/>
+                        <input type="radio" name="seat" id="L8" value="L8"/>
+                        <input type="radio" name="seat" id="L9" value="L9"/>
+                        <input type="radio" name="seat" id="L10" value="L10"/>
+                        <input type="radio" name="seat" id="L11" value="L11"/>
+                        <input type="radio" name="seat" id="L12" value="L12"/>
+                        <input type="radio" name="seat" id="L13" value="L13"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="L17" value="L17"/>
+                        <input type="radio" name="seat" id="L18" value="L18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="M1" value="M1"/>
+                        <input type="radio" name="seat" id="M2" value="M2"/>
+                        <input type="radio" name="seat" id="M3" value="M3"/>
+                        <input type="radio" name="seat" id="M4" value="M4"/>
+                        <input type="radio" name="seat" id="M5" value="M5"/>
+                        <input type="radio" name="seat" id="M6" value="M6"/>
+                        <input type="radio" name="seat" id="M7" value="M7"/>
+                        <input type="radio" name="seat" id="M8" value="M8"/>
+                        <input type="radio" name="seat" id="M9" value="M9"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="M14" value="M14"/>
+                        <input type="radio" name="seat" id="M15" value="M15"/>
+                        <input type="radio" name="seat" id="M16" value="M16"/>
+                        <input type="radio" name="seat" id="M17" value="M17"/>
+                        <input type="radio" name="seat" id="M18" value="M18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="N1" value="N1"/>
+                        <input type="radio" name="seat" id="N2" value="N2"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="N5" value="N5"/>
+                        <input type="radio" name="seat" id="N6" value="N6"/>
+                        <input type="radio" name="seat" id="N7" value="N7"/>
+                        <input type="radio" name="seat" id="N8" value="N8"/>
+                        <input type="radio" name="seat" id="N9" value="N9"/>
+                        <input type="radio" name="seat" id="N10" value="N10"/>
+                        <input type="radio" name="seat" id="N11" value="N11"/>
+                        <input type="radio" name="seat" id="N12" value="N12"/>
+                        <input type="radio" name="seat" id="N13" value="N13"/>
+                        <input type="radio" name="seat" id="N14" value="N14"/>
+                        <input type="radio" name="seat" id="N15" value="N15"/>
+                        <input type="radio" name="seat" id="N16" value="N16"/>
+                        <input type="radio" name="seat" id="N17" value="N17"/>
+                        <input type="radio" name="seat" id="N18" value="N18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="O1" value="O1"/>
+                        <input type="radio" name="seat" id="O2" value="O2"/>
+                        <input type="radio" name="seat" id="O3" value="O3"/>
+                        <input type="radio" name="seat" id="O4" value="O4"/>
+                        <input type="radio" name="seat" id="O5" value="O5"/>
+                        <input type="radio" name="seat" id="O6" value="O6"/>
+                        <input type="radio" name="seat" id="O7" value="O7"/>
+                        <input type="radio" name="seat" id="O8" value="O8"/>
+                        <input type="radio" name="seat" id="O9" value="O9"/>
+                        <input type="radio" name="seat" id="O10" value="O10"/>
+                        <input type="radio" name="seat" id="O11" value="O11"/>
+                        <input type="radio" name="seat" id="O12" value="O12"/>
+                        <input type="radio" name="seat" id="O13" value="O13"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" class="row__seat row__seat--reserved"/>
+                        <input type="radio" name="seat" id="O16" value="O16"/>
+                        <input type="radio" name="seat" id="O17" value="O17"/>
+                        <input type="radio" name="seat" id="O18" value="O18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="P1" value="P1"/>
+                        <input type="radio" name="seat" id="P2" value="P2"/>
+                        <input type="radio" name="seat" id="P3" value="P3"/>
+                        <input type="radio" name="seat" id="P4" value="P4"/>
+                        <input type="radio" name="seat" id="P5" value="P5"/>
+                        <input type="radio" name="seat" id="P6" value="P6"/>
+                        <input type="radio" name="seat" id="P7" value="P7"/>
+                        <input type="radio" name="seat" id="P8" value="P8"/>
+                        <input type="radio" name="seat" id="P9" value="P9"/>
+                        <input type="radio" name="seat" id="P10" value="P10"/>
+                        <input type="radio" name="seat" id="P11" value="P11"/>
+                        <input type="radio" name="seat" id="P12" value="P12"/>
+                        <input type="radio" name="seat" id="P13" value="P13"/>
+                        <input type="radio" name="seat" id="P14" value="P14"/>
+                        <input type="radio" name="seat" id="P15" value="P15"/>
+                        <input type="radio" name="seat" id="P16" value="P16"/>
+                        <input type="radio" name="seat" id="P17" value="P17"/>
+                        <input type="radio" name="seat" id="P18" value="P18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="Q1" value="Q1"/>
+                        <input type="radio" name="seat" id="Q2" value="Q2"/>
+                        <input type="radio" name="seat" id="Q3" value="Q3"/>
+                        <input type="radio" name="seat" id="Q4" value="Q4"/>
+                        <input type="radio" name="seat" id="Q5" value="Q5"/>
+                        <input type="radio" name="seat" id="Q6" value="Q6"/>
+                        <input type="radio" name="seat" id="Q7" value="Q7"/>
+                        <input type="radio" name="seat" id="Q8" value="Q8"/>
+                        <input type="radio" name="seat" id="Q9" value="Q9"/>
+                        <input type="radio" name="seat" id="Q10" value="Q10"/>
+                        <input type="radio" name="seat" id="Q11" value="Q11"/>
+                        <input type="radio" name="seat" id="Q12" value="Q12"/>
+                        <input type="radio" name="seat" id="Q13" value="Q13"/>
+                        <input type="radio" name="seat" id="Q14" value="Q14"/>
+                        <input type="radio" name="seat" id="Q15" value="Q15"/>
+                        <input type="radio" name="seat" id="Q16" value="Q16"/>
+                        <input type="radio" name="seat" id="Q17" value="Q17"/>
+                        <input type="radio" name="seat" id="Q18" value="Q18"/>
+                    </div>
+                    <div class="seat_row">
+                        <input type="radio" name="seat" id="R1" value="R1"/>
+                        <input type="radio" name="seat" id="R2" value="R2"/>
+                        <input type="radio" name="seat" id="R3" value="R3"/>
+                        <input type="radio" name="seat" id="R4" value="R4"/>
+                        <input type="radio" name="seat" id="R5" value="R5"/>
+                        <input type="radio" name="seat" id="R6" value="R6"/>
+                        <input type="radio" name="seat" id="R7" value="R7"/>
+                        <input type="radio" name="seat" id="R8" value="R8"/>
+                        <input type="radio" name="seat" id="R9" value="R9"/>
+                        <input type="radio" name="seat" id="R10" value="R10"/>
+                        <input type="radio" name="seat" id="R11" value="R11"/>
+                        <input type="radio" name="seat" id="R12" value="R12"/>
+                        <input type="radio" name="seat" id="R13" value="R13"/>
+                        <input type="radio" name="seat" id="R14" value="R14"/>
+                        <input type="radio" name="seat" id="R15" value="R15"/>
+                        <input type="radio" name="seat" id="R16" value="R16"/>
+                        <input type="radio" name="seat" id="R17" value="R17"/>
+                        <input type="radio" name="seat" id="R18" value="R18"/>
+                    </div>
                 </div>
-            </div>
-            <div class="theater select_container">
-                <h5>극장</h5>
-                <div>
-                    <div class="select_list"></div>
-                    <div class="select_list"></div>
-                </div>
-            </div>
-            <div class="time select_container">
-                <h5>시간</h5>
-                <div class="select_list"></div>
-            </div>
+                <!-- /rows -->
+                <ul class="legend">
+                    <li class="legend__item legend__item--free">Free</li>
+                    <li class="legend__item legend__item--reserved">Reserved</li>
+                    <li class="legend__item legend__item--selected">Selected</li>
+                </ul>
+                <button class="action action--buy">Buy tickets</button>
+            </div><!-- /plan -->
+            <button class="action action--lookaround action--disabled" arial-label="Unlook View"></button>
         </div>
     </form>
 </section>
+
+<script src="../static/js/ticket_classie.js"></script>
+<script src="../static/js/ticket_main.js"></script>
 {% endblock %}

@@ -12,7 +12,7 @@
     font-weight: bold;
 }
 
-.ticketing .ticketing__container {
+.ticketing__container {
     display: flex;
     flex-direction: column;
 
@@ -98,4 +98,8 @@
 .select_list input[type='radio']:checked + label {
     background-color: #D1DFEB;
     color: #1F588D;
+}
+
+.seat_row input[type='radio'] {
+    display: none;
 }
