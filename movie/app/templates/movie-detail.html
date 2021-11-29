@@ -1,20 +1,5 @@
 {% extends 'base.html' %}
 {% block contents %}
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                        <a href="./categories.html">Categories</a>
-                        <span>Romance</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb End -->
 
     <!-- Anime Section Begin -->
     <section class="anime-details spad">
@@ -73,7 +58,7 @@
                             </div>
                             <div class="anime__details__btn">
                                 <!-- <a href="#" class="follow-btn"><i class="fa fa-heart-o"></i> 찜하기</a> -->
-                                <a href="#" class="watch-btn"><span>예매하기</span> <i
+                                <a href="{% url 'ticketing' %}" class="watch-btn"><span>예매하기</span> <i
                                     class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
@@ -86,7 +71,7 @@
                             <div class="section-title">
                                 <h5>영화 후기</h5>
                             </div>
-                            <div class="anime__review__item"> <!--리뷰 댓글-->>
+                            <div class="anime__review__item"> <!--리뷰 댓글-->
                                 <div class="anime__review__item__pic">
                                     <img src="img/anime/review-1.jpg" alt="">
                                 </div>
@@ -149,7 +134,7 @@
                             </div>
                             <form action="#">
                                 <textarea placeholder="후기를 입력하세요"></textarea>
-                                <button type="submit"><i class="fa fa-location-arrow"></i> 등록</button>
+                                <button type="submit">등록</button>
                             </form> 
                         </div>
                     </div>

@@ -19,7 +19,7 @@
     margin-top: 20px;
 
     height: 500px;
-    border: 2px solid #C4C4C4;
+    box-shadow: 1px 1px 10px 1px #C4C4C4;
 }
 
 .ticketing__calender {
