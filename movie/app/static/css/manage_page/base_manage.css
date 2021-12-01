@@ -136,10 +136,12 @@
 .manage_container {
     display: flex;
     height: 100%;
+    background-color: #f7f7f7;
 }
 
 .manage_container > * {
     margin: 20px;
+    background-color: #fff;
 }
 
 .manage_container > div {
@@ -148,6 +150,7 @@
 
 .manage_container > .manage_nav {
     flex: 1 1 0;
+    height: 484px;
     padding: 10px;
 
     box-shadow: 1px 1px 10px 1px #C4C4C4;
