@@ -352,6 +352,11 @@ ol {
 	display: inline-block;
 }
 
+.header__logo img {
+    width: 80px;
+    height: 40px
+}
+
 .header__menu {
 	text-align: center;
 }

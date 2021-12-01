@@ -37,3 +37,6 @@ def reservationinfo(request):
 
 def manage_main(request):
     return render(request, './manage_page/manage_main.html')
+
+def manage_revenue(request):
+    return render(request, './manage_page/manage_revenue.html')

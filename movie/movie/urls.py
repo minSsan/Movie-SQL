@@ -32,4 +32,5 @@ urlpatterns = [
     path('reservationinfo', reservationinfo, name="reservationinfo"),
 
     path('manage_main', manage_main, name="manage_main"),
+    path('manage_revenue', manage_revenue, name="manage_revenue"),
 ]

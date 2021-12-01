@@ -88,6 +88,11 @@
 	display: inline-block;
 }
 
+.header__logo img {
+    width: 80px;
+    height: 40px
+}
+
 .manage_title {
 	text-align: center;
     display: grid;
@@ -141,11 +146,11 @@
 
 .manage_container > * {
     margin: 20px;
-    background-color: #fff;
 }
 
 .manage_container > div {
     margin-left: 0;
+    height: 484px;
 	overflow-y: scroll;
 }
 
@@ -155,6 +160,7 @@
     padding: 10px;
 
     box-shadow: 1px 1px 10px 1px #C4C4C4;
+    background-color: #fff;
 }
 
 hr {

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../../static/css/manage_page/base_manage.css">
     <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    {% block extrahead %}
+    {% endblock %}
     <title>관리자 페이지</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
                 <div class="col-lg-2">
                     <div class="header__logo">
                         <a href="{% url 'home' %}">
-                            <img src="" alt="">로고
+                            <img src="../../static/img/CCV_3.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -32,10 +34,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="header__right">
-                        <a href="{% url 'mypage' %}" class="search-switch"><span class="icon_search"></span></a>
-                        <a href="{% url 'login' %}"><span class="icon_profile"></span></a>
-                    </div>
+                    
                 </div>
             </div>
             <div id="mobile-menu-wrap"></div>
@@ -49,7 +48,7 @@
                 <li>
                     <span class="nav__item">
                         <p class="nav__header">관리자 정보</p>
-                        <a href="">관리자 개인정보</a>
+                        <a href="{% url 'manage_main' %}">관리자 개인정보</a>
                     </span>
                 </li>
                 <hr/>
@@ -63,8 +62,8 @@
                 <li>
                     <span class="nav__item">
                         <p class="nav__header">매출 관리</p>
-                        <a href="">기간별 매출</a>
-                        <a href="">영화별 매출</a>
+                        <a href="{% url 'manage_revenue' %}">기간별 매출</a>
+                        <a href="{% url 'manage_revenue' %}">영화별 매출</a>
                     </span>
                 </li>
                 <hr/>
@@ -97,14 +96,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="footer__nav">
-                        <ul>
-                            <li class="active"><a href="./index.html">Homepage</a></li>
-                            <li><a href="./categories.html">Categories</a></li>
-                            <li><a href="./blog.html">Our Blog</a></li>
-                            <li><a href="#">Contacts</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-3">
                     <p>Hanyang Univ. ERICA

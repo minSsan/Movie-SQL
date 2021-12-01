@@ -1,30 +1,40 @@
 {% extends './base_manage.html' %}
+{% load static %}
+{% block extrahead %}
+    <link rel="stylesheet" href="../../static/css/manage_page/manage_main.css">
+{% endblock %}
 {% block content %}
-<!-- Area Chart -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">차트 이름</h6>
-    </div> <!--차트 이름-->
-    <div class="card-body">
-        <div class="chart-area">
-            <canvas id="myAreaChart"></canvas>
+<div>
+    <img class="profile-back" src="../../static/img/profile_back.jpg">
+    <div class="profile-container">
+        <img src="../../static/img/profile_default.png"alt="프로필 사진">
+        
+        <div class="name-container">
+            <p><strong>박민선</strong></p>
         </div>
-        <hr>
-        차트 설명                        
     </div>
-</div>
 
-<!-- Bar Chart -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">차트 이름</h6>
-    </div>
-    <div class="card-body">
-        <div class="chart-bar">
-            <canvas id="myBarChart"></canvas>
+    <div class="info-container">
+        <div class="spec">
+            <div>
+                <div class="spec-title">
+                    <p>PROFILE</p>
+                </div>
+                
+                <strong>생년월일 </strong>2000.11.25 <br>
+                <strong>성별 </strong>여 <br>
+                <strong>전화번호 </strong> 010-1234-5678<br>
+                <strong>이메일 </strong> min@hanyang.ac.kr
+            </div>
+            <div>
+                <div class="spec-title">
+                    <p>FIELD</p>
+                </div>    
+                
+                <strong>직급</strong> 직원<br>
+                <strong>소속부서</strong> 마케팅
+            </div>
         </div>
-        <hr>
-        차트 설명
     </div>
 </div>
 {% endblock %}
