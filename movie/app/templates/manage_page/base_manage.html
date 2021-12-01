@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/manage_page/base_manage.css">
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/elegant-icons.css" type="text/css">
+    <title>관리자 페이지</title>
+</head>
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home' %}">
+                            <img src="" alt="">로고
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 manage_title">
+                    <div>
+                        <a href="{% url 'manage_main' %}">
+                            <p>관리 페이지</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="{% url 'mypage' %}" class="search-switch"><span class="icon_search"></span></a>
+                        <a href="{% url 'login' %}"><span class="icon_profile"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <section class="manage_container">
+        <nav class="manage_nav">
+            <ul>
+                <li>
+                    <span class="nav__item">
+                        <p class="nav__header">관리자 정보</p>
+                        <a href="">관리자 개인정보</a>
+                    </span>
+                </li>
+                <hr/>
+                <li>
+                    <span class="nav__item">
+                        <p class="nav__header">영화 정보 관리</p>
+                        <a href="">영화테이블 조회 및 관리</a>
+                    </span>
+                </li>
+                <hr/>
+                <li>
+                    <span class="nav__item">
+                        <p class="nav__header">매출 관리</p>
+                        <a href="">기간별 매출</a>
+                        <a href="">영화별 매출</a>
+                    </span>
+                </li>
+                <hr/>
+                <li>
+                    <span class="nav__item">
+                        <p class="nav__header">회사 관리</p>
+                        <a href="">상영관 테이블 조회 및 관리</a>
+                        <a href="">직원 테이블 조회 및 관리</a>
+                        <a href="">시설물 테이블 조회 및 관리</a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <div class="manage_div">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="page-up">
+            <a href="#" id="scrollToTopButton"><span class="arrow_carrot-up"></span></a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer__nav">
+                        <ul>
+                            <li class="active"><a href="./index.html">Homepage</a></li>
+                            <li><a href="./categories.html">Categories</a></li>
+                            <li><a href="./blog.html">Our Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <p>Hanyang Univ. ERICA
+                        <br/>2-2 Database
+                        <br/>Team A6
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Js Plugins -->
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/player.js"></script>
+    <script src="../static/js/jquery.nice-select.min.js"></script>
+    <script src="../static/js/mixitup.min.js"></script>
+    <script src="../static/js/jquery.slicknav.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+</html>

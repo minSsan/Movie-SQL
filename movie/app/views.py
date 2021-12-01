@@ -33,3 +33,7 @@ def infomodification(request):
 
 def reservationinfo(request):
     return render(request, './mypage/reservationinfo.html') 
+
+
+def manage_main(request):
+    return render(request, './manage_page/manage_main.html')

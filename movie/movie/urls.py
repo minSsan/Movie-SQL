@@ -30,4 +30,6 @@ urlpatterns = [
     path('eventrecord', eventrecord, name="eventrecord"),
     path('infomodification', infomodification, name="infomodification"),
     path('reservationinfo', reservationinfo, name="reservationinfo"),
+
+    path('manage_main', manage_main, name="manage_main"),
 ]
