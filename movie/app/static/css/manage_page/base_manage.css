@@ -144,6 +144,7 @@
 
 .manage_container > div {
     margin-left: 0;
+	overflow-y: scroll;
 }
 
 .manage_container > .manage_nav {
