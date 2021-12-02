@@ -38,6 +38,10 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 html,
 body {
 	height: 100%;
@@ -346,6 +350,11 @@ ol {
 
 .header__logo a {
 	display: inline-block;
+}
+
+.header__logo img {
+    width: 80px;
+    height: 40px
 }
 
 .header__menu {
@@ -932,7 +941,7 @@ background: #b7b7b788;
 	top: 12px;
 	height: 6px;
 	width: 6px;
-	background: #b7b7b7;
+	background: #777777;
 	content: "";
 }
 
@@ -1013,7 +1022,7 @@ background: #b7b7b788;
 }
 
 .anime__review__item__text h6 span {
-	color: #b7b7b7;
+	color: #181616;
 	font-weight: 400;
 }
 

@@ -33,8 +33,7 @@ urlpatterns = [
     path('eventrecord', eventrecord, name="eventrecord"),
     path('infomodification', infomodification, name="infomodification"),
     path('reservationinfo', reservationinfo, name="reservationinfo"),
-    path('managerpage', managerpage, name="managerpage"),
-    path('companymanage', companymanage, name="companymanage"),
-    path('moviemanage', moviemanage, name="moviemanage"),
-    path('revenuemanage', revenuemanage, name="revenuemanage"),
+
+    path('manage_main', manage_main, name="manage_main"),
+    path('manage_revenue', manage_revenue, name="manage_revenue"),
 ]
