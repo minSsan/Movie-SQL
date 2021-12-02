@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #b0c5d8;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #673ab7;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #f44336;
+		border-left-color: transparent;
+	}
+}
+
+/*---------------------
+  Header
+-----------------------*/
+
+.header {
+	background: #fff;
+}
+
+.row {
+    width: 100%;
+}
+
+.header__logo {
+	padding: 20px 0 17px;
+}
+
+.header__logo a {
+	display: inline-block;
+}
+
+.header__logo img {
+    width: 80px;
+    height: 40px
+}
+
+.manage_title {
+	text-align: center;
+    display: grid;
+    align-content: center;
+}
+
+.manage_title p {
+    color: #32516b;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.manage_title a:hover {
+    text-decoration: none;
+}
+
+.header__right {
+	text-align: right;
+	padding: 20px 0 15px;
+}
+
+.header__right a {
+	display: inline-block;
+	font-size: 18px;
+	color: #000;
+	margin-right: 30px;
+}
+
+.header__right a:last-child {
+	margin-right: 0;
+}
+
+.slicknav_menu {
+	display: none;
+}
+
+/*---------------------
+  management section
+-----------------------*/
+
+.manage_nav ul {
+    list-style: none;
+}
+
+.manage_container {
+    display: flex;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+.manage_container > * {
+    margin: 20px;
+}
+
+.manage_container > div {
+    margin-left: 0;
+    height: 484px;
+	overflow-y: scroll;
+}
+
+.manage_container > .manage_nav {
+    flex: 1 1 0;
+    height: 484px;
+    padding: 10px;
+
+    box-shadow: 1px 1px 10px 1px #C4C4C4;
+    background-color: #fff;
+}
+
+hr {
+    color: #585858;
+}
+
+.manage_nav .nav__item {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.nav__item > .nav__header {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #32516b;
+}
+
+.nav__item > a {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: #799cb9;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+.nav__item > a:hover {
+    color: #b0c5d8;
+    text-decoration: none;
+}
+
+.manage_container > .manage_div {
+    flex: 3.5 1 0;
+}
+
+/*---------------------
+  Footer
+-----------------------*/
+
+.footer {
+	background: #32516b;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.page-up {
+	position: absolute;
+	left: 50%;
+	top: -25px;
+	margin-left: -25px;
+}
+
+.page-up a {
+	display: inline-block;
+	font-size: 36px;
+	color: #ffffff;
+	height: 50px;
+	width: 50px;
+	background: #6185a3;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.page-up a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-up a span {
+	position: relative;
+	top: 2px;
+	left: -1px;
+}
+
+.footer__nav {
+	text-align: center;
+}
+
+.footer__nav ul li {
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	margin-right: 40px;
+}
+
+.footer__nav ul li:last-child {
+	margin-right: 0;
+}
+
+.footer__nav ul li a {
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	font-weight: 700;
+}
+
+.footer__copyright__text {
+	color: #fff;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.footer__copyright__text a {
+	color: #6185a3;
+}
