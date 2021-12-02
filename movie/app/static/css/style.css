@@ -712,6 +712,7 @@ background: #b7b7b788;
 
 .product__item__text ul {
 	margin-bottom: 10px;
+	margin-left: 135px;
 }
 
 .product__item__text ul li {
@@ -730,6 +731,7 @@ background: #b7b7b788;
 	color: #000;
 	font-weight: 700;
 	line-height: 26px;
+	text-align: center;
 }
 
 .product__item__text h5 a {
