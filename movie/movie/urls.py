@@ -25,7 +25,12 @@ urlpatterns = [
     path('movie_list', movie_list, name="movie_list"),
     path('signup', signup, name="signup"),
     path('login', login, name="login"),
+<<<<<<< HEAD
     path('forget', forget, name="forget"),
+=======
+    path('events', events, name="events"),
+    path('event_detail', event_detail, name="event_detail"),
+>>>>>>> 7ad79f6c0aa9f42d34f238a2cdf718c6b40b465e
     path('findID', findID, name="findID"),
     path('events', events, name="events"),
     path('event_detail', event_detail, name="event_detail"),
