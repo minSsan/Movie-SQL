@@ -1582,6 +1582,14 @@ background: #b7b7b788;
 	color: #a6a6a6;
 }
 
+.event__img {
+	height: 2000px;
+	position: relative;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 10px;
+}
+
 /*---------------------
   Login
 -----------------------*/
