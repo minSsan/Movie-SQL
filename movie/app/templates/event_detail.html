@@ -1,24 +1,29 @@
 {% extends 'base.html' %}
 {% block contents %}
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a>
-                        <a href="{% url 'events' %}">Events</a>
-                        <span>모든 요일 6천원 할인!!</span>
-                    </div>
+
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="event-detail">
+                    <h2 class="tit">모든 요일 6천원 할인!</h2>
+                     <p class="event-detail-date">
+                         <span>기간 | </span>
+                          <em>                             
+                              2021.11.29 ~ 2021.12.31
+                          </em>
+                          <hr>             
+                     </p>
                 </div>
             </div>
         </div>
-    </div>
+
+
+    
     <!-- Breadcrumb End -->
 
     <!--event image-->
     <div class="event__img set-bg" data-setbg="static/img/event/event1-2.jpg">
-    </div> <!--style.css에 event__img class height 조정-->
-
+    </div> <!--style.css에 event__img class height 조정-->   
 
 {% endblock %}

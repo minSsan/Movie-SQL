@@ -174,8 +174,8 @@ ol {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 700;
-	text-transform: uppercase;
-	color: #000;
+	text-transform: uppercase	;
+	color: #ffffff;
 	letter-spacing: 2px;
 }
 
@@ -2219,4 +2219,16 @@ background: #b7b7b788;
 	.anime__review__item__text {
 		padding: 18px 20px 20px;
 	}
+}
+
+.event-detail {
+	position: relative;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 40px;
+	margin-left: 0px;
+	padding-top: 50px;
+	padding-right: 15%;
+	padding-bottom: 30px;
+	padding-left: 15%;
 }
