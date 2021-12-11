@@ -37,10 +37,6 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-a {
-	text-decoration: none;
-}
-
 html,
 body {
 	height: 100%;
@@ -349,11 +345,6 @@ ol {
 
 .header__logo a {
 	display: inline-block;
-}
-
-.header__logo img {
-    width: 80px;
-    height: 40px
 }
 
 .header__menu {
@@ -731,6 +722,7 @@ background: #b7b7b788;
 
 .product__item__text ul {
 	margin-bottom: 10px;
+	margin-left: 135px;
 }
 
 .product__item__text ul li {
@@ -952,7 +944,7 @@ background: #b7b7b788;
 	top: 12px;
 	height: 6px;
 	width: 6px;
-	background: #777777;
+	background: #b7b7b7;
 	content: "";
 }
 
@@ -1033,7 +1025,7 @@ background: #b7b7b788;
 }
 
 .anime__review__item__text h6 span {
-	color: #181616;
+	color: #b7b7b7;
 	font-weight: 400;
 }
 
@@ -1600,6 +1592,14 @@ background: #b7b7b788;
 
 .blog__details__form form textarea::placeholder {
 	color: #a6a6a6;
+}
+
+.event__img {
+	height: 2000px;
+	position: relative;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 10px;
 }
 
 /*---------------------
@@ -2260,4 +2260,20 @@ background: #b7b7b788;
 	.anime__review__item__text {
 		padding: 18px 20px 20px;
 	}
+}
+
+.event-detail {
+	position: relative;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 40px;
+	margin-left: 0px;
+	padding-top: 50px;
+	padding-right: 15%;
+	padding-bottom: 30px;
+	padding-left: 15%;
+}
+.mypage__info {
+
+	padding-right: 40%;
 }

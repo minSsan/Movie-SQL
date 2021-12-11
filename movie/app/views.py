@@ -211,6 +211,12 @@ def ticketing(request):
 def ticketing_seat(request, context):
     return render(request, 'ticketing_seat.html', context)
 
+def forget(request):
+    return render(request, 'forget.html')
+
+def findID(request):
+    return render(request, 'findID.html')
+    
 def events(request):
     return render(request, 'events.html')
 
@@ -295,9 +301,6 @@ def events(request):
 def eventrecord(request):
     return render(request, './mypage/eventrecord.html')
 
-def findID(request):
-    return render(request, 'findID.html')
-
 def infomodification(request):
     return render(request, './mypage/infomodification.html')
 
@@ -320,6 +323,7 @@ def reservationinfo(request):
         context['reservations'].append(reservation_info)
     # print(context)
     return render(request, './mypage/reservationinfo.html', context) 
+
 
 def manage_main(request):
     return render(request, './manage_page/manage_main.html')

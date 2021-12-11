@@ -7,7 +7,7 @@ p {
 }
 
 .ticketing {
-    width: 80%;
+    width: 1000px;
     margin: 5% auto;
 }
 
@@ -15,7 +15,7 @@ p {
     font-weight: bold;
 }
 
-.ticketing__container {
+.ticketing .ticketing__container {
     display: flex;
     flex-direction: column;
 
