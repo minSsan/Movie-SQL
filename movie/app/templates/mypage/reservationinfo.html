@@ -1,48 +1,37 @@
-{% extends 'base_mypage.html' %}
+{% extends './base_mypage.html' %}
 {% block content %}             
     <h1 class="mt-4">예매 정보</h1>
     <ol class="breadcrumb mb-4">
         <!-- <li class="breadcrumb-item active">예매 정보</li> -->
      </ol>
     <div class="card mb-4">
-                            <div class="card-header">
-                                <i class="fas fa-table me-1"></i>
-                                예매 기록
-                            </div>
-                            <div class="card-body">
-                                <table id="datatablesSimple">
-                                    <thead>
-                                        <tr>
-                                            <th>예매 번호</th>
-                                            <th>영화명</th>
-                                            <th>날짜</th>
-                                            <th>상영관</th>
-                                        
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>예매 번호</th>
-                                            <th>영화명</th>
-                                            <th>날짜</th>
-                                            <th>상영관</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>43987203432</td>
-                                            <td>영화이름</td>
-                                            <td>2021.12.01</td>
-                                            <td>61</td>                                            
-                                        </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td>Accountant</td>
-                                            <td>Tokyo</td>
-                                            <td>63</td>                                           
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+        {% for reservation in reservations %}
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            {{reservation.movie_name}}
+        </div>
+        <div class="card-body">
+            <table id="datatable" style="border-spacing: 40px; border-collapse: separate;">
+                <thead>
+                    <tr>
+                        <th>지점</th>
+                        <th>극장</th>
+                        <th>좌석</th>
+                        <th>시작 시간</th>
+                        <th>런타임</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{reservation.branch_city}} / {{reservation.branch_name}}</td>
+                        <td>{{reservation.theater_name}}</td>
+                        <td>{{reservation.seat}}</td>
+                        <td>{{reservation.start_time}}</td>
+                        <td>{{reservation.play_time}}분</td>                                            
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        {% endfor %}
     </div>
 {% endblock %}

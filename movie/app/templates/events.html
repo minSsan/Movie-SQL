@@ -16,69 +16,138 @@
     <!-- Normal Breadcrumb End -->
 
     <!-- Blog Section Begin -->
-    <section class="blog spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event1-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.24</h5>
-                                    <h5><a href="#">이벤트 1</a></h5>
-                                </div>
+    <section class="py-5" style="padding-bottom: 0;">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Product image-->
+                        <a href="{% url 'event_detail' %}"><img class="card-img-top" src="static/img/event/event1-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5><b>모든 요일 6천원 할인!!</b></h5>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event2-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.25</h5>
-                                    <h5><a href="{% url 'event_detail' %}">이벤트 2</a></h5>
-                                </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event2-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5><b>스피드무비파이터</b></h5>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event3-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.25</h5>
-                                    <h5><a href="{% url 'event_detail' %}">이벤트 3</a></h5>
-                                </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event3-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5><b>고스트 한정판 포스터 나눔</b></h5>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event4-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.25</h5>
-                                    <h5><a href="{% url 'event_detail' %}">이벤트 4</a></h5>
-                                </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event4-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5><b>호빗 한정판 포스터 나눔</b></h5>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event5-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.25</h5>
-                                    <h5><a href="{% url 'event_detail' %}">이벤트 5</a></h5>
-                                </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">종료됨</div>
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event5-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <s><h5><b>짱구 가습기 출시</b></h5></s>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <a href="{% url 'event_detail' %}"><div class="product__item__pic set-bg" data-setbg="static/img/event/event6-1.jpg"></div></a>        
-                                <div class="product__item__text">
-                                    <h5>2021.11.20~2020.11.25</h5>
-                                    <h5><a href="{% url 'event_detail' %}">이벤트 6</a></h5>
-                                </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">종료됨</div>
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event6-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <s><h5><b>예매 오픈 알림</b></h5></s>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">종료됨</div>
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event7-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <s><h5><b>미리미리 게임 이벤트</b></h5></s>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card ">
+                        <!-- Sale badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">종료됨</div>
+                        <!-- Product image-->
+                        <a href="#"><img class="card-img-top" src="static/img/event/event8-1.jpg"/></a>
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <s><h5><b>이달의 아이스콘</b></h5></s>
+                                <!-- Product price-->
+                                <br><h6>2021.11.20~2021.11.24</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
     <!-- Blog Section End -->
 {% endblock %}
