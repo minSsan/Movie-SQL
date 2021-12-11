@@ -9,7 +9,6 @@
 
 /*------------------------------------------------------------------
 [Table of contents]
-
 1.  Template default CSS
 	1.1	Variables
 	1.2	Mixins
@@ -179,7 +178,7 @@ ol {
 	font-size: 13px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #000;
+	color: #c3c3c3;
 	letter-spacing: 2px;
 }
 
@@ -369,13 +368,11 @@ ol {
 }
 
 .header__menu ul li.active a {
-	background: #b0c5d8;
-	color: #ffffff;
+	color: #c4c4c4;
 }
 
 .header__menu ul li:hover a {
-	color: #fff;
-	background: #b0c5d8;
+	color: #c4c4c4;
 }
 
 .header__menu ul li:hover .dropdown {
@@ -397,7 +394,7 @@ ol {
 	left: 0;
 	top: 82px;
 	width: 150px;
-	background: #b0c5d8;
+	background-color: #fff;
 	text-align: left;
 	padding: 5px 0;
 	z-index: 9;
@@ -415,9 +412,13 @@ ol {
 
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
-	color: #fff;
+	color: #000;
 	font-weight: 500;
 	padding: 5px 20px;
+}
+
+.header__menu ul li .dropdown li a:hover {
+	color: #c4c4c4;
 }
 
 .header__menu ul li a {
@@ -462,7 +463,8 @@ ol {
 -----------------------*/
 
 .hero {
-	padding-top: 50px;
+	padding: 50px 0;
+	background-color: #f6f6f6;
 }
 
 .hero__items {
@@ -646,6 +648,8 @@ background: #b7b7b788;
 .product {
 	padding-bottom: 60px;
 	padding-top: 80px;
+	background-color: #3d3d3d;
+    
 }
 
 .product-page {
@@ -677,6 +681,11 @@ background: #b7b7b788;
 	height: 325px;
 	position: relative;
 	border-radius: 5px;
+}
+
+.product__item__pic:hover {
+	transform: scale(1.1);
+	transition: all 0.2s;
 }
 
 .product__item__pic .ep {
@@ -717,6 +726,7 @@ background: #b7b7b788;
 
 .product__item__text {
 	padding-top: 20px;
+	text-align: center;
 }
 
 .product__item__text ul {
@@ -729,7 +739,7 @@ background: #b7b7b788;
 	color: #fff;
 	font-weight: 700;
 	padding: 1px 10px;
-	background: #386183;
+	background: #000000;
 	opacity: 0.5;
 	border-radius: 50px;
 	display: inline-block;
@@ -739,6 +749,7 @@ background: #b7b7b788;
 	color: #000;
 	font-weight: 700;
 	line-height: 26px;
+	text-align: center;
 }
 
 .product__item__text h5 a {
@@ -1596,13 +1607,25 @@ background: #b7b7b788;
 -----------------------*/
 
 .login {
-	padding-top: 130px;
+	/* padding-top: 130px; */
 	padding-bottom: 120px;
 }
 
 .login__form {
 	position: relative;
+	box-shadow: 1px 1px 10px 1px #c4c4c4;
+}
+
+.login__form {
+	/*
+	position: relative;
 	padding-left: 145px;
+	*/
+	display: inline-block;
+	margin: auto;
+	box-shadow: 1px 1px 10px 1px #c4c4c4;
+    
+	padding: 20px;
 }
 
 .login__form:after {
@@ -1683,15 +1706,15 @@ background: #b7b7b788;
 
 .login__form .forget_pass {
 	font-size: 15px;
-	color: #000;
+	color: #c4c4c4;
 	display: inline-block;
-	position: absolute;
-	right: 60px;
-	bottom: 12px;
 }
 
 .login__register {
-	padding-left: 30px;
+	padding-top: 176px;
+	padding-bottom: 175px;
+	text-align: center;
+	box-shadow: 1px 1px 10px 1px #c4c4c4;
 }
 
 .login__register h3 {
@@ -1765,13 +1788,28 @@ background: #b7b7b788;
 	top: 14px;
 }
 
+#signup_text {
+	color: #777777;
+}
+
+#signup_text:hover {
+	color: #c4c4c4;
+}
+
 /*---------------------
   Sign Up
 -----------------------*/
 
 .signup {
-	padding-top: 130px;
+	/* padding-top: 130px; */
 	padding-bottom: 150px;
+}
+
+.signup .login__form {
+	display: inline-block;
+	margin: auto;
+	box-shadow: 1px 1px 10px 1px #c4c4c4;
+    padding: 20px;
 }
 
 .signup .login__form:after {
@@ -1785,7 +1823,7 @@ background: #b7b7b788;
 }
 
 .signup .login__form h5 a {
-	color: #e53637;
+	color: #000;
 	font-weight: 700;
 }
 
@@ -1804,6 +1842,10 @@ background: #b7b7b788;
 .signup .login__social__links ul li a {
 	margin: 0;
 	text-align: center;
+}
+
+#login_text {
+	color: #000;
 }
 
 /*---------------------

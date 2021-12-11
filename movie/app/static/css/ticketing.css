@@ -1,3 +1,11 @@
+p {
+    margin: 0;
+}
+
+#modal {
+    display: none;
+}
+
 .ticketing {
     width: 80%;
     margin: 5% auto;
@@ -95,6 +103,33 @@
     color: #1F588D;
 }
 
+#select_seat_btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color:rgb(173, 173, 173);
+    color: #fff;
+}
+
+#modal {
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+#seat__back_btn {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.header__title {
+    text-align: center;
+}
+
 .seat_row input[type='radio'] {
     display: none;
+}
+
+.seat_row input[type='radio']:checked + label {
+    background: #21c252;
 }
